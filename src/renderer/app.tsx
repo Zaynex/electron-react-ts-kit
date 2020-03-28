@@ -4,11 +4,9 @@ export interface Props {
   name: string
 }
 
-
 export default class App extends React.Component<Props, object> {
   render(): ReactElement {
     const { name } = this.props
-
 
     return (
       <div className="hello">

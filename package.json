@@ -17,29 +17,15 @@
     "debug": "electron-webpack dev --inspect-brk=9229"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.27",
-    "@emotion/styled": "^10.0.27",
-    "@material-ui/core": "^4.9.4",
-    "@material-ui/icons": "^3.0.2",
     "@sentry/electron": "1.2.1",
-    "address": "^1.1.2",
     "axios": "^0.19.0",
-    "clsx": "^1.0.4",
-    "electron-better-ipc": "^0.3.0",
     "electron-log": "^3.0.5",
-    "electron-store": "^3.2.0",
     "electron-updater": "^4.0.6",
-    "electron-util": "^0.12.1",
-    "idb-keyval": "3.2.0",
-    "immer": "^5.3.6",
     "prop-types": "^15.7.2",
     "querystring": "^0.2.0",
     "react": "^16.9.0",
-    "react-day-picker": "^7.4.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^4.3.1",
-    "rxjs": "^6.5.4",
-    "rxjs-hooks": "^0.5.2",
     "source-map-support": "^0.5.9"
   },
   "devDependencies": {
@@ -62,20 +48,21 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^2.0.1",
     "hazardous": "^0.3.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9",
     "prettier": "^1.18.2",
     "typescript": "^3.8.3",
     "webpack": "^4.17.1"
   },
   "husky": {
-      "hooks": {
-          "pre-commit": "tsc --noEmit && lint-staged"
-      }
+    "hooks": {
+      "pre-commit": "tsc --noEmit && lint-staged"
+    }
   },
   "lint-staged": {
-      "*.{js,ts,tsx}": [
-          "eslint --fix",
-          "git add"
-      ]
+    "./src/**/*.{js,jsx,ts,tsx}": [
+      "yarn fix"
+    ]
   },
   "build": {
     "artifactName": "${productName}.${ext}",
