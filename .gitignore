@@ -1,0 +1,8 @@
+node_modules
+/build/
+.vscode
+*.log
+exe
+error-log.txt
+__tests__
+dist

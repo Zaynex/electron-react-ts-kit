@@ -1,0 +1,5 @@
+dist/*
+docs/*
+coverage/*
+__mocks__/*
+node_modules/**
