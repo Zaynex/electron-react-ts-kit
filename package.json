@@ -26,6 +26,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^4.3.1",
+    "react-use": "^13.27.1",
     "source-map-support": "^0.5.9"
   },
   "devDependencies": {
@@ -66,7 +67,7 @@
   },
   "build": {
     "artifactName": "${productName}.${ext}",
-    "productName": "有道培优小班"
+    "productName": "ElectronTypescriptReact"
   },
   "author": "zaynex",
   "license": "MIT"
