@@ -37,7 +37,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
     "cross-env": "^6.0.3",
-    "electron": "^7.2.4",
+    "electron": "^18.3.7",
     "electron-builder": "^21.2.0",
     "electron-webpack": "^2.7.4",
     "electron-webpack-ts": "^4.0.0",
